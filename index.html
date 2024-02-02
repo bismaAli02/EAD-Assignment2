@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health News Dashboard</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main content container -->
+    <div class="container">
+        <div class="card">
+            <!-- Card header with navigation bar -->
+            <div class="card-header">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">Health News Dashboard</a>
+                        <!-- Form for date selection and search button -->
+                        <form class="d-flex">
+                            <input name="date" id="date" class="form-control me-2" type="date" placeholder="Select Date"
+                                aria-label="Search">
+                            <!-- Search button triggering the startFetching() function -->
+                            <button id="dateButton" class="btn btn-success" type="button"
+                                onclick="startFetching()">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <!-- Card body containing the main content -->
+            <div class="card-body">
+                <h1 class="card-title">News About Health</h1>
+                <!-- Table displaying news data -->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Published Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Web Worker script for background processing -->
+    <script src="worker.js"></script>
+    <!-- Main script for fetching and displaying news data -->
+    <script src="main.js"></script>
+</body>
+
+</html>

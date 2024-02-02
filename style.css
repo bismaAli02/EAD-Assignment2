@@ -1,0 +1,82 @@
+ /* Custom CSS styles */
+
+
+ /* Global body styles */
+ body {
+     background-color: #f8f9fa;
+     color: #495057;
+ }
+
+ /* Container styles */
+ .container {
+     margin-top: 20px;
+ }
+
+ /* Card styles */
+ .card {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .card-header {
+     background-color: #38253e;
+     color: #fff;
+     border: none;
+ }
+
+ .navbar-brand {
+     font-weight: bold;
+     color: #fff;
+     font-size: 1.5rem;
+ }
+
+ /* Navbar styles */
+ .navbar {
+     background-color: #38253e;
+     padding: 1rem;
+     border-radius: 0.25rem;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Table styles */
+ .table {
+     background-color: #fff;
+     border: 1px solid #dee2e6;
+ }
+
+ .table th,
+ .table td {
+     text-align: center;
+     color: #495057;
+ }
+
+ .table th {
+     background-color: #38253e;
+     color: #fff;
+     font-weight: bold;
+ }
+
+ /* Table hover styles */
+ .table-hover tbody tr:hover {
+     background-color: #f8f9fa;
+ }
+
+ .btn-visit {
+     color: #fff;
+     background-color: #007bff;
+     border-color: #007bff;
+ }
+
+ .btn-visit:hover {
+     color: #007bff;
+     background-color: #0056b3;
+     border-color: #0056b3;
+ }
+
+ .form-control {
+     border-color: #28a745;
+ }
+
+ .form-control:focus {
+     border-color: #28a745;
+     box-shadow: none;
+ }
